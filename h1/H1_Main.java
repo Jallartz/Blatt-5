@@ -1,8 +1,8 @@
 package h1;
-public class h1 {
+
+public class H1_Main {
     public static void main(String[] args) {
 
-       
         int[] myArray = {5, 6, 7, 10};
 
         int n = myArray.length;
@@ -11,11 +11,5 @@ public class h1 {
             myArray[i] = myArray[n - 1 - i];
             myArray[n - 1 - i] = temp;
         }
-
-        for (int value : myArray) {
-            System.out.print(value + " ");
-        }
-        System.out.println();
     }
-
 }
