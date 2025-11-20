@@ -1,18 +1,18 @@
+package h2;
 public class h2 {
     public static void main(String[] args) {
 
-        int n = 299;      // Beispielwert, kannst du ändern
+        int n = 299;      
         int digits = 0;
 
-        int[] a = new int[9];  // automatisch mit 0 vorbelegt
-
+        int[] a = new int[9]; 
         int temp = n;
 
         if (temp == 0) {
             digits = 1;
-            a[8] = 0;          // ganz rechts die einzige Ziffer 0
+            a[8] = 0;        
         } else {
-            int index = 8;     // wir füllen von rechts nach links
+            int index = 8;     
             while (temp > 0 && index >= 0) {
                 int ziffer = temp % 10;
                 a[index] = ziffer;
@@ -20,7 +20,7 @@ public class h2 {
                 index--;
                 digits++;
             }
-            // die restlichen linken Zellen bleiben 0 (waren es schon)
+            
         }
 
         System.out.println("n = " + n);
